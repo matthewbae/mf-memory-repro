@@ -16,6 +16,8 @@ Questions:
 
 Note: I created `react-remote`, and it doesn't reproduce the memory leak. Although it consumes more memory using `material-icons`, at least it releases the memory. You can test `react-remote` by doing `npm ci` and `npm run start` and seeing the gc logs.
 
+You don't have to run `next-host` with `next-remote` to reproduce the issue.
+
 ## Summary
 
 This icon import causes the problem. See [ExposedComponent.tsx](./next-remote/components/ExposedComponent.tsx)
