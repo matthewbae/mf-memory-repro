@@ -1,15 +1,16 @@
 # Reproduction
 
-Go to `next-remote` and run
+Go to `next-remote` folder and run
 * `npm ci`
 * `npm run dev:mf`
 
 Then go to [ExposedComponent.tsx](./next-remote/components/ExposedComponent.tsx). Click somewhere in the file, and run "cmd + s" (macos) or "ctrl + s" (windows) to trigger HMR. To reproduce the memory increase, I spammed "cmd + s" to retrigger HMR around 100 times, waited a little, then repeated.
 
-Two questions:
+Questions:
 1. Why does the memory increase so much?
 2. Why isn't the memory released?
  * It might have to do with the HMR implementation of Next.js MF plugin? https://github.com/module-federation/universe/pull/228
+3. How can I inspect what webpack does to pinpoint this kind of memory issue in the future?
 
 ## Summary
 
