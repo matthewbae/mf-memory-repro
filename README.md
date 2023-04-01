@@ -1,5 +1,7 @@
 # Reproduction
 
+This is a reproduction of high memory consumption with the Next.js MF plugin.
+
 Go to `next-remote` folder and run
 * `npm ci`
 * `npm run dev:mf`
