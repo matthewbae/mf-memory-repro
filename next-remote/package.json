@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node --trace-gc ./node_modules/.bin/next dev -p 3001",
+    "dev:mf": "cross-env WITH_MF=true node --trace-gc ./node_modules/.bin/next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,12 +13,14 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@module-federation/nextjs-mf": "^6.2.2",
+    "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.15",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4"
   }
