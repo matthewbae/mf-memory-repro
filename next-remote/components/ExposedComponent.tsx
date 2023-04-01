@@ -3,8 +3,9 @@ import { Card, Typography } from "@mui/material";
 /**
  * This icon import causes the problem
  * Following https://mui.com/material-ui/guides/minimizing-bundle-size/#development-environment
- * works, but I want to understand why this causes a very large increase
- * in memory when trigger lots of HMR
+ * mitigates it, but I want to understand why this causes a very large increase
+ * in memory when trigger lots of HMR. Especially because I don't have the option
+ * to do this immediately.
  * 
  * Without Module Federation, we consume lots of memory, but it's fine.
  * With Module Federation, there's more memory consumed, which can exceed
