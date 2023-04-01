@@ -1,6 +1,6 @@
 const NextFederationPlugin = require("@module-federation/nextjs-mf");
 
-const moduleFederationEnabled = process.env.WITH_MF === 'true';
+const moduleFederationEnabled = process.env.WITH_MF === "true";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -20,6 +20,8 @@ const nextConfig = {
         })
       );
     }
+
+    console.log(config);
 
     return config;
   },
