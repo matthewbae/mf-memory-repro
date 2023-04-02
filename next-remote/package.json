@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev:": "cross-env WITH_MF=true node --trace-gc ./node_modules/.bin/next dev -p 3001",
+    "dev": "cross-env WITH_MF=true node --trace-gc ./node_modules/.bin/next dev -p 3001",
     "dev:nomf": "node --trace-gc ./node_modules/.bin/next dev -p 3001",
     "build": "next build",
     "start": "next start",
