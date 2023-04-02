@@ -1,6 +1,6 @@
 # Reproduction
 
-This is a reproduction of high memory consumption with the Next.js MF plugin.
+This is a reproduction of high memory consumption with the Next.js MF plugin. Note that this doesn't not require us to actually perform the federation to reproduce the memory consumption issues.
 
 Go to `next-remote` folder and run
 * `npm ci`
@@ -19,6 +19,8 @@ Note: I created `react-remote`, and it doesn't reproduce the memory leak. Althou
 You don't have to run `next-host` with `next-remote` to reproduce the issue.
 
 I also tried running `next-remote` without module federation using `npm run dev:nomf`, and the memory problem doesn't exist. Based on this, I don't believe it's due to Next.js directly either.
+
+Another experiment was run sharing `@mui/icons-material`, and it the issue still reproduces albeit more slowly.
 
 ## Summary
 

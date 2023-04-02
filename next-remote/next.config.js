@@ -16,7 +16,13 @@ const nextConfig = {
             "./components/ExposedComponent": "./components/ExposedComponent",
           },
           remotes: {},
-          shared: {},
+          // Even sharing @mui/icons-material will cause the memory issues albeit more slowly
+          shared: {
+            // "@mui/icons-material": {
+            //   singleton: true,
+            //   requiredVersion: false,
+            // },
+          },
         })
       );
     }
