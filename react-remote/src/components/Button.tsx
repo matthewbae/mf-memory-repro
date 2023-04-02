@@ -1,4 +1,5 @@
 import React from 'react';
+import { AccessAlarmOutlined } from '@mui/icons-material';
 
 export interface ButtonProps {
   color?: 'blue' | 'red';
@@ -9,6 +10,7 @@ const Button: React.FC<ButtonProps> = ({ color = 'blue' }: ButtonProps) => (
     <p>
       More react components from <strong>App2</strong> using non-legacy React to render
     </p>
+    <AccessAlarmOutlined></AccessAlarmOutlined>
     <button style={{ color: color === 'blue' ? 'blue' : 'red' }}>App 2 Button</button>
   </div>
 );
