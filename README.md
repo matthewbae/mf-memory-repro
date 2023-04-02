@@ -6,7 +6,7 @@ Go to `next-remote` folder and run
 * `npm ci`
 * `npm run dev`
 
-Then go to [ExposedComponent.tsx](./next-remote/components/ExposedComponent.tsx). Click somewhere in the file, and run "cmd + s" (macos) or "ctrl + s" (windows) to trigger HMR. To reproduce the memory increase, I spammed "cmd + s" to retrigger HMR a bunch of times, waited a little, then repeated.
+Then go to [ExposedComponent.tsx](./next-remote/components/ExposedComponent.tsx). Click somewhere in the file, and run "cmd + s" (macos) or "ctrl + s" (windows) to trigger HMR. To reproduce the memory increase, I spammed "cmd + s" (holding it down) to retrigger HMR a bunch of times, waited a little, then repeated.
 
 Questions:
 1. Why does the memory increase so much?
